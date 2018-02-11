@@ -1,0 +1,47 @@
+section#features {
+  .grid(100%);
+  .font-smooth;
+  padding: 2em 0 4em;
+  background-color: @dark-gray;
+  background-image: linear-gradient(-45deg, darken(@gray, 20%) 0%, @dark-gray 100%);
+  color: @white;
+  header {
+    text-align: center;
+  }
+  section#screenshot {
+    .grid(50%);
+    float: right;
+    overflow: hidden;
+    img {
+      width: 85%;
+      height: auto;
+      margin-top: 3em;
+      margin-left: 15%;
+    }
+  }
+  section#feature-list {
+    .grid(40%);
+    margin-right: 5%;
+    margin-left: 5%;
+    float: right;
+    font-size: 1.2em;
+    li {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width : 899px) {
+  section#features {
+    section#screenshot {
+      .grid(70%);
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    section#feature-list {
+      .grid(80%);
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+  }
+}

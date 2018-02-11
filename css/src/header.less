@@ -1,0 +1,56 @@
+// Header Section
+// Normal Wide Desktop Screens
+header {
+  .grid(100%);
+  section#introduction{
+    .grid(50%);
+    .logo {
+      img {
+        display: block;
+        margin: 40px auto 40px auto;
+        max-width: 70%;
+        height: auto;
+      }
+    }
+    .title {
+      display: block;
+      width: 80%;
+      margin: 1em 0 2em 20%;
+      .font-smooth;
+      font-size: 2vw;
+    }
+  }
+  section#screenshot{
+    .grid(40%);
+    margin: 5% 10% 0 0;
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}
+
+// Header Section
+// Smaller Screens and Mobile
+@media only screen and (max-width : 899px) {
+  header {
+    section#introduction{
+      .grid(100%);
+      .title {
+        max-width: 460px;
+        width: 80%;
+        margin: 1em auto 2em;
+        text-align:center;
+        font-size: 1.2em;
+        br {
+          display: none;
+        }
+      }
+    }
+    section#screenshot{
+      .grid(100%);
+    }
+  }
+}
