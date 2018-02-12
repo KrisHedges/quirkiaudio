@@ -5,7 +5,7 @@ section#distribution {
   padding: 40px 10%;
   background-color: @white;
   border-top: 1px solid lighten(@gray, 20%);
-  border-bottom: 1px solid lighten(@gray, 20%);
+  border-bottom: 1px solid @gray;
   font-size: 1.4em;
 
   section#web,
@@ -26,7 +26,18 @@ section#distribution {
       margin: 1em;
       color: @white;
       text-decoration: none;
+      transition: all 130ms linear;
+      box-shadow: 0px 0px 13px lighten(@gray, 16%);
+      &:hover {
+        background-color: lighten(@red, 2%);
+        box-shadow:0px 10px 23px lighten(@gray, 19%);
+        color: #fff;
+      }
     }
+    em {
+      font-size: 0.8em;
+    }
+
   }
   section#desktop {
     .download {
@@ -38,6 +49,8 @@ section#distribution {
         width: 100%;
         height: auto;
         .grid(20%);
+        transition: all 130ms linear;
+        filter: drop-shadow(0px 2px 8px lighten(@gray, 19%));
       }
       span {
         .grid(70%);
@@ -45,6 +58,14 @@ section#distribution {
         position: relative;
         top: 50%;
         transform: translateY(-60%);
+        em {
+          font-size: 0.8em;
+        }
+      }
+      &:hover {
+        img {
+          filter: drop-shadow(0px 7px 13px lighten(@gray, 23%));
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 @gray: #666;
 @dark-gray: #191919;
-@white: #cecece;
+@white: #dedede;
 @red: #B22C2C;
 
 .grid(@width){
@@ -48,10 +48,12 @@ a:visited,
 a {
   color: @red;
   text-decoration: none;
+  transition: all 130ms linear;
 }
 
 a:hover,
 a:focus {
+  color: lighten(@red, 3%);
   text-decoration: underline;
   span {
     text-decoration: underline;
