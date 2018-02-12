@@ -56,8 +56,10 @@ header section#introduction {
 }
 header section#introduction .logo img {
   display: block;
-  margin: 40px auto 40px auto;
-  max-width: 70%;
+  margin: 20% auto 40px auto;
+  width: 25%;
+  max-width: 350px;
+  min-width: 200px;
   height: auto;
 }
 header section#introduction .title {
@@ -66,7 +68,7 @@ header section#introduction .title {
   margin: 1em 0 2em 20%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 2vw;
+  font-size: 2.2vw;
 }
 header section#screenshot {
   display: inline-block;
@@ -74,15 +76,16 @@ header section#screenshot {
   margin: 0;
   padding: 0;
   width: 40%;
-  margin: 5% 10% 0 0;
+  margin: 0 10% 0 0;
 }
 header section#screenshot img {
   display: block;
-  margin: 0px auto;
-  max-width: 90%;
+  margin: 50% auto 0;
+  max-width: 80%;
   height: auto;
+  transform: translateY(-35%);
 }
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1023px) {
   header section#introduction {
     display: inline-block;
     float: left;
@@ -95,7 +98,7 @@ header section#screenshot img {
     width: 80%;
     margin: 1em auto 2em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2em;
   }
   header section#introduction .title br {
     display: none;
@@ -106,6 +109,10 @@ header section#screenshot img {
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+  header section#screenshot img {
+    margin: 1% auto 5%;
+    transform: translateY(0%);
   }
 }
 section#distribution {
@@ -118,6 +125,7 @@ section#distribution {
   background-color: #cecece;
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
+  font-size: 1.4em;
 }
 section#distribution section#web,
 section#distribution section#desktop,
@@ -139,10 +147,9 @@ section#distribution section#mobile h2 {
 section#distribution section#web .launch-now {
   display: inline-block;
   background-color: #B22C2C;
-  padding: 1em;
+  padding: 1.2em;
   margin: 1em;
   color: #cecece;
-  font-size: 1.3em;
   text-decoration: none;
 }
 section#distribution section#desktop .download {
@@ -162,20 +169,20 @@ section#distribution section#desktop .download img {
   float: left;
   margin: 0;
   padding: 0;
-  width: 30%;
+  width: 20%;
 }
 section#distribution section#desktop .download span {
   display: inline-block;
   float: left;
   margin: 0;
   padding: 0;
-  width: 60%;
+  width: 70%;
   margin: 0 5%;
   position: relative;
   top: 50%;
   transform: translateY(-60%);
 }
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1023px) {
   section#distribution section#web,
   section#distribution section#desktop,
   section#distribution section#mobile {
@@ -185,6 +192,14 @@ section#distribution section#desktop .download span {
     padding: 0;
     width: 90%;
     margin: 1em 5%;
+    text-align: center;
+  }
+  section#distribution section#desktop .download {
+    display: block;
+    width: 300px;
+    margin: 1.5em auto 0;
+    float: none;
+    clear: both;
   }
 }
 section#features {
@@ -199,9 +214,12 @@ section#features {
   background-color: #191919;
   background-image: linear-gradient(-45deg, #333333 0%, #191919 100%);
   color: #cecece;
+  font-size: 1.2em;
 }
 section#features header {
   text-align: center;
+  width: 90%;
+  margin: 1em 5%;
 }
 section#features section#screenshot {
   display: inline-block;
@@ -213,10 +231,10 @@ section#features section#screenshot {
   overflow: hidden;
 }
 section#features section#screenshot img {
-  width: 85%;
+  width: 80%;
   height: auto;
   margin-top: 3em;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 section#features section#feature-list {
   display: inline-block;
@@ -227,20 +245,28 @@ section#features section#feature-list {
   margin-right: 5%;
   margin-left: 5%;
   float: right;
-  font-size: 1.2em;
+}
+section#features section#feature-list ul {
+  max-width: 500px;
 }
 section#features section#feature-list li {
   margin-bottom: 1em;
+  font-size: 1.4em;
 }
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1200px) {
   section#features section#screenshot {
     display: inline-block;
     float: left;
     margin: 0;
     padding: 0;
-    width: 70%;
-    margin-right: 10%;
-    margin-left: 10%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  section#features section#screenshot img {
+    width: 100%;
+    margin: 1em 0 0 0;
+    height: auto;
   }
   section#features section#feature-list {
     display: inline-block;

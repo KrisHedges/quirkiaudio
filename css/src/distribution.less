@@ -6,6 +6,7 @@ section#distribution {
   background-color: @white;
   border-top: 1px solid lighten(@gray, 20%);
   border-bottom: 1px solid lighten(@gray, 20%);
+  font-size: 1.4em;
 
   section#web,
   section#desktop,
@@ -21,10 +22,9 @@ section#distribution {
     .launch-now {
       display: inline-block;
       background-color: @red;
-      padding: 1em;
+      padding: 1.2em;
       margin: 1em;
       color: @white;
-      font-size: 1.3em;
       text-decoration: none;
     }
   }
@@ -37,10 +37,10 @@ section#distribution {
         max-width: 80px;
         width: 100%;
         height: auto;
-        .grid(30%);
+        .grid(20%);
       }
       span {
-        .grid(60%);
+        .grid(70%);
         margin: 0 5%;
         position: relative;
         top: 50%;
@@ -52,13 +52,23 @@ section#distribution {
 
 // Distribution Section
 // Smaller Screens and Mobile
-@media only screen and (max-width : 899px) {
+@media only screen and (max-width : 1023px) {
   section#distribution {
     section#web,
     section#desktop,
     section#mobile{
       .grid(90%);
       margin: 1em 5%;
+      text-align: center;
+    }
+    section#desktop {
+      .download {
+        display: block;
+        width: 300px;
+        margin: 1.5em auto 0;
+        float: none;
+        clear: both;
+      }
     }
   }
 }

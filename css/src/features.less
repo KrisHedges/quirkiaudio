@@ -5,18 +5,21 @@ section#features {
   background-color: @dark-gray;
   background-image: linear-gradient(-45deg, darken(@gray, 20%) 0%, @dark-gray 100%);
   color: @white;
+  font-size: 1.2em;
   header {
     text-align: center;
+    width: 90%;
+    margin: 1em 5%;
   }
   section#screenshot {
     .grid(50%);
     float: right;
     overflow: hidden;
     img {
-      width: 85%;
+      width: 80%;
       height: auto;
       margin-top: 3em;
-      margin-left: 15%;
+      margin-left: 20%;
     }
   }
   section#feature-list {
@@ -24,19 +27,27 @@ section#features {
     margin-right: 5%;
     margin-left: 5%;
     float: right;
-    font-size: 1.2em;
+    ul{
+      max-width: 500px;
+    }
     li {
       margin-bottom: 1em;
+      font-size: 1.4em;
     }
   }
 }
 
-@media only screen and (max-width : 899px) {
+@media only screen and (max-width : 1200px) {
   section#features {
     section#screenshot {
-      .grid(70%);
-      margin-right: 10%;
-      margin-left: 10%;
+      .grid(90%);
+      margin-right: 5%;
+      margin-left: 5%;
+      img {
+        width: 100%;
+        margin: 1em 0 0 0;
+        height: auto;
+      }
     }
     section#feature-list {
       .grid(80%);
