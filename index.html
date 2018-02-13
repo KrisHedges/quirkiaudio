@@ -24,6 +24,7 @@
         <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/dist/main.css">
+        <link rel="stylesheet" href="css/dist/audio_presenter.css">
     </head>
     <body>
       <header>
@@ -34,6 +35,12 @@
           <div class="title">
             Introducing The QM3, from Quirki Audio.<br/>
             An <em>Analogous</em> Analog Synthesizer for the web and offline.
+          </div>
+          <div
+            class="audio-presenter"
+            data-source="media/QuirkiQM3Sampler.mp3"
+            data-message="Have A Listen."
+            data-timeline="media/QuirkiQM3Sampler.json">
           </div>
         </section>
         <section id='screenshot'>
@@ -100,6 +107,7 @@
       </footer>
       <!--All javascript below -->
         <script src="js/main.js"></script>
+        <script src="js/audio_presenter.bundle.js"></script>
         <!-- Google Analytics -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
