@@ -27,10 +27,10 @@ section#distribution {
       color: @white;
       text-decoration: none;
       transition: all 130ms linear;
-      box-shadow: 0px 0px 13px lighten(@gray, 16%);
+      box-shadow: 0px 0px 8px fade(@gray, 33%);
       &:hover {
         background-color: lighten(@red, 2%);
-        box-shadow:0px 10px 23px lighten(@gray, 19%);
+        box-shadow:0px 4px 6px fade(@gray, 339%);
         color: #fff;
       }
     }
@@ -50,7 +50,7 @@ section#distribution {
         height: auto;
         .grid(20%);
         transition: all 130ms linear;
-        filter: drop-shadow(0px 2px 8px lighten(@gray, 19%));
+        filter: drop-shadow(0px 0px 1px fade(@gray, 239%));
       }
       span {
         .grid(70%);
@@ -64,7 +64,7 @@ section#distribution {
       }
       &:hover {
         img {
-          filter: drop-shadow(0px 7px 13px lighten(@gray, 23%));
+          filter: drop-shadow(0px 4px 3px fade(@gray, 53%));
         }
       }
     }
