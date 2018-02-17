@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 .font-smooth {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
 }
 html {
   width: 100%;
@@ -253,10 +258,14 @@ section#features section#screenshot {
   float: right;
   overflow: hidden;
 }
+section#features section#screenshot .audio-presenter {
+  width: 80%;
+  margin: 0 0 0 20%;
+}
 section#features section#screenshot img {
   width: 80%;
   height: auto;
-  margin-top: 3em;
+  margin-top: 0;
   margin-left: 20%;
 }
 section#features section#feature-list {

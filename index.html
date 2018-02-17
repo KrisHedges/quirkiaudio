@@ -23,8 +23,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="css/dist/main.css">
-        <link rel="stylesheet" href="css/dist/audio_presenter.min.css">
+        <link rel="stylesheet" href="build/main.css">
+        <link rel="stylesheet" href="node_modules/audio-presentation/dist/audio_presenter.min.css">
     </head>
     <body>
       <header>
@@ -83,7 +83,6 @@
         <header>
           <h1>Full-Featured Audio Synthesis Using Web Technology</h1>
         </header>
-
         <section id="feature-list">
           <h2>Quirki  QM3</h2>
           <h3>Monophonic Analogue Modeling Synthesizer</h3>
@@ -98,6 +97,12 @@
         </section>
 
         <section id="screenshot">
+          <div
+            class="audio-presenter"
+            data-source="media/QM3Demo-Instablability.mp3"
+            data-message="Put it in Your Ears"
+            data-timeline="media/QM3Demo-Instablability.json">
+          </div>
           <img src="images/full-screenshot-1.png"/>
         </section>
       </section>
@@ -106,8 +111,8 @@
         Created by Kris Hedges @ <a href="http://www.krishedges.space">krishedges.space</a>
       </footer>
       <!--All javascript below -->
-        <script src="js/main.js"></script>
-        <script src="js/audio_presenter.min.js"></script>
+        <script src="node_modules/audio-presentation/dist/audio_presenter.min.js"></script>
+        <script src="build/main.js"></script>
         <!-- Google Analytics -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
