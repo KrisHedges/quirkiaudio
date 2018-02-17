@@ -278,10 +278,6 @@ section#features section#screenshot {
   float: right;
   overflow: hidden;
 }
-section#features section#screenshot .audio-presentation {
-  width: 80%;
-  margin: 0 0 0 20%;
-}
 section#features section#screenshot img {
   width: 80%;
   height: auto;
@@ -301,9 +297,12 @@ section#features section#feature-list {
 section#features section#feature-list ul {
   max-width: 500px;
 }
-section#features section#feature-list li {
+section#features section#feature-list ul li {
   margin-bottom: 1em;
   font-size: 1.4em;
+}
+section#features section#feature-list .audio-presentation {
+  max-width: 500px;
 }
 @media only screen and (max-width: 1200px) {
   section#features section#screenshot {
@@ -314,10 +313,6 @@ section#features section#feature-list li {
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
-  }
-  section#features section#screenshot .audio-presentation {
-    width: 94%;
-    margin: 1.5em 3%;
   }
   section#features section#screenshot img {
     width: 100%;
@@ -332,6 +327,14 @@ section#features section#feature-list li {
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
+  }
+  section#features section#feature-list ul {
+    max-width: 100%;
+  }
+  section#features section#feature-list .audio-presentation {
+    max-width: 100%;
+    width: 94%;
+    margin: 2.8em 3% 0 3%;
   }
 }
 footer {
