@@ -11,10 +11,18 @@
   width: @width;
 }
 
-.font-smooth {
+.font-smooth() {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.clear-fix(){
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 html {
