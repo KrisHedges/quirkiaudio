@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>plus_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plus_icon">
+            <g>
+                <rect id="Rectangle-2-Copy-5" fill-opacity="0" fill="#444444" x="-2.84217094e-14" y="0" width="29" height="29" rx="3"></rect>
+                <polygon id="+" fill="#CECECE" points="9.19977866 13.6719037 13.3924152 13.6719037 13.3924152 9.44977866 15.1075848 9.44977866 15.1075848 13.6719037 19.3002213 13.6719037 19.3002213 15.351423 15.1075848 15.351423 15.1075848 19.5502213 13.3924152 19.5502213 13.3924152 15.351423 9.19977866 15.351423"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
